@@ -1,0 +1,21 @@
+
+.search{
+    width : 100%;
+    display : flex;
+    align-items: centre;
+    justify-content: space-evenly; ;
+}
+.search input{
+    background-color : white;
+    color : black;
+    font-size: small;
+}
+header{
+    display: inline;
+    justify-content: space-evenly;
+}
+
+.search button{
+    background-color : rgb(124, 124, 254);
+    color : white;
+} 
