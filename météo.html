@@ -4,59 +4,67 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="météo.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <title>Application météo</title>
 </head>
 <header>
 
-    <div class = "search" >
-        <input type = "text" placeholder = "Entrer nom d'une ville " spellachek = "false">
-        <button>Rechercher</button>
+    <div class = "search p-1">
+        <input class="rounded-pill" type = "text" placeholder = "Entrer nom d'une ville " spellachek = "false">
+        <button class = "btn btn-primary">Rechercher</button>
 
     <script src="script.js"></script>
    
 </header>
-<body>
-    <img src = "Photos\meteo 1.png" alt = meteo1>
-    Température Actuelle :
-    <h1>18°</h1>
-    H = 22°  |  L = 15°
-
-    <div>
-        Aujourd'hui
-        <img src = "Photos\meteo 1.png" alt = meteo1>
-        22°/15°
+<body class = "bg-info">
+    <section class = "partie">
+    <h1>Beni Mellal</h1>
+    <img src = "Photos\meteo 1.png" alt = meteo1 width="30%" height="30%">
+    </section>
+     
+    <div class = "p-3">
+    <h6>Température Actuelle :</h6>
+    <h1 id = "ta">18°</h1>
+    <h6>H = 22°  |  L = 15°<h6>
     </div>
 
-    <div>
-         5 prochaines jours
-         <div>
-            <img src = "Photos\03d@2x.png" alt = meteo2>
-            25°/17°
+    <section class = "meteo">
+    <div class = "aujourdhui p-3">
+       <h6>Aujourd'hui</h6> 
+        <img src = "Photos\meteo 1.png" id= "image" alt = meteo1 width="90%" height="60%">
+        <h6>22°/15°<h6>
+    </div>
+
+    <div class="prochaine-jour p-3">
+        <h6> 5 prochaines jours </h6>
+         <div class = "jour">
+            <img src = "Photos\03d@2x.png" alt = meteo2 width="90%" height="60%" >
+        <h6> 25°/17° </h6>
          </div>
 
-         <div>
-            <img src = "Photos\09d@2x.png" alt = meteo3>
-            15°/9°
+         <div class = "jour">
+            <img src = "Photos\09d@2x.png" id= "image" alt = meteo3 width="90%" height="60%">
+            <h6>  15°/9°</h6>
          </div>
 
-         <div>
-            <img src = "Photos\11d@2x.png" alt = meteo4>
-            13°/5°
+         <div class = "jour">
+            <img src = "Photos\11d@2x.png" id= "image" alt = meteo4 width="90%" height="60%">
+            <h6>13°/5°</h6> 
          </div>
 
-         <div>
-            <img src = "Photos\03d@2x.png" alt = meteo5>
-            25°/15°
+         <div class = "jour">
+            <img src = "Photos\03d@2x.png" id= "image" alt = meteo5 width="90%" height="60%">
+            <h6>  25°/15° </h6>
          </div>
 
-         <div>
-            <img src = "Photos\01d@2x.png" alt = meteo5>
-            27°/17°
+         <div class = "jour">
+            <img src = "Photos\01d@2x.png" id= "image" alt = meteo6 width="90%" height="60%">
+            <h6>27°/17° </h6>
          </div>
 
     </div>
 
-    
+</section> 
     
 </body>
 </html>
