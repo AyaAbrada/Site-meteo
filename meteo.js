@@ -13,6 +13,7 @@
         document.getElementById('ta').innerHTML=data.main.temp + "°C";
         document.getElementById('humidite').innerHTML=data.main.humidity + "%";
         document.getElementById('vent').innerHTML=data.wind.speed + "Km/h";
+        document.querySelector('.icon').src= `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`
         console.log(data)
     }
 

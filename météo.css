@@ -15,11 +15,7 @@ header{
     justify-content: space-evenly;
 }
 
-.prochaine-jour{
-    display: inline-flex;
-    background-color: blue;
-    border-radius: 10px;
-}
+
 .aujourdhui{
     background-color: blue;
     border-radius: 10%;
@@ -31,14 +27,18 @@ header{
     width: 100%;
     height: 100%;
     color: white;
-    display: inline-flex;
-    justify-content: space-evenly;
+    display: flex;
     gap : 2% ;
     margin-top: 5%;
 }
 .jour{
-    display: flex;
-    flex-direction: column;
+    width: 100px;
+    height: 60px;
+    justify-content: space-between;
+    background-color: blue;
+    border-radius: 10px;
+    display: inline-flex;
+    justify-content: center;
     align-items: center;
 }
 .partie{
@@ -49,4 +49,8 @@ header{
 #ta{
     font-size: 700%;
 
+}
+
+@media screen {
+    
 }

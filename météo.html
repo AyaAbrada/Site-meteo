@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,65 +10,82 @@
 </head>
 <header>
 
-    <div class = "search p-1">
-        <input class="search-input rounded-pill" type = "text" placeholder = "Entrer nom d'une ville " spellachek = "false">
-        <button class = "btn btn-primary">Rechercher</button>
+    <div class="search p-1">
+        <input class="search-input rounded-pill" type="text" placeholder="Entrer nom d'une ville " spellachek="false">
+        <button class="btn btn-primary">Rechercher</button>
 
-    <script src="script.js"></script>
-   
+        <script src="script.js"></script>
+
 </header>
-<body class = "bg-info">
-    <section class = "partie">
-    <h1 id = "nomVille">Nom de la ville</h1>
-    <img src = "Photos\meteo 1.png" alt = meteo1 width="30%" height="30%">
+
+<body class="bg-info">
+    <section class="partie">
+        <h1 id="nomVille">Nom de la ville</h1>
+        <img class="icon" src="Photos\meteo 1.png" alt=meteo1 width="30%" height="30%">
     </section>
-     
-    <div class = "p-3">
-    <h6>Température Actuelle :</h6>
-    <h1 id = "ta">C°</h1>
-      <div class = "d-flex"> <h6>Humidité :</h6> <h6 id = "humidite"> %</h6> </div>
-      <div class = "d-flex"> <h6>Vent :</h6> <h6 id = "vent"> Km/h</h6> </div>
+
+    <div class="p-3">
+        <h6>Température Actuelle :</h6>
+        <h1 id="ta">C°</h1>
+        <div class="d-flex">
+            <h6>Humidité :</h6>
+            <h6 id="humidite"> %</h6>
+        </div>
+        <div class="d-flex">
+            <h6>Vent :</h6>
+            <h6 id="vent"> Km/h</h6>
+        </div>
 
     </div>
 
-    <section class = "meteo p-3">
-    <div class = "aujourdhui p-3">
-       <h6>Aujourd'hui</h6> 
-        <img src = "Photos\meteo 1.png" id= "image" alt = meteo1 width="90%" height="60%">
-        <div><h6 id = "td1"> C° </h6></div>
+    <div class="meteo p-3">
+        <div class="aujourdhui p-3">
+            <h6>Aujourd'hui</h6>
+            <img class = "icon" src="Photos\meteo 1.png" id="image" alt=meteo1 width="90%" height="60%">
+            <div>
+                <h6 id="td1"> C° </h6>
+            </div>
+        </div>
+
+        <div class="d-block"> 
+            <h6> 5 prochaines jours</h6>
+            <div class="prochaine-jour p-3 d-flex gap-3">
+            <div class="jour">
+                <div>
+                    <h6 id="td2"> C°</h6>
+                </div>
+            </div>
+
+            <div class="jour">
+                <div>
+                    <h6 id="td3"> C°</h6>
+                </div>
+            </div>
+
+            <div class="jour">
+                <div>
+                    <h6 id="td4"> C°</h6>
+                </div>
+            </div>
+
+            <div class="jour">
+
+                <div>
+                    <h6 id="td5"> C°</h6>
+                </div>
+            </div>
+
+            <div class="jour">
+                <div>
+                    <h6 id="td6"> C°</h6>
+                </div>
+            </div>
+            </div>
+
+        </div>
     </div>
 
-    <div class="prochaine-jour p-3">
-        
-        <h6> Température du 5 prochaines jours à 12:00</h6>
-         <div class = "jour">
-            <img src = "Photos\03d@2x.png" alt = meteo2 width="90%" height="60%" >
-        <div><h6 id = "td2"> C°</h6></div>
-         </div>
-
-         <div class = "jour">
-            <img src = "Photos\09d@2x.png" id= "image" alt = meteo3 width="90%" height="60%">
-            <div><h6 id = "td3"> C°</h6></div>
-         </div>
-
-         <div class = "jour">
-            <img src = "Photos\11d@2x.png" id= "image" alt = meteo4 width="90%" height="60%">
-            <div><h6 id = "td4"> C°</h6></div>
-         </div>
-
-         <div class = "jour">
-            <img src = "Photos\03d@2x.png" id= "image" alt = meteo5 width="90%" height="60%">
-            <div><h6 id = "td5"> C°</h6></div>
-         </div>
-
-         <div class = "jour">
-            <img src = "Photos\01d@2x.png" id= "image" alt = meteo6 width="90%" height="60%">
-            <div><h6 id = "td6"> C°</h6></div>
-         </div>
-
-    </div>
-</section> 
-<script src="meteo.js"></script>   
+    <script src="meteo.js"></script>
 </body>
 
 </html>
