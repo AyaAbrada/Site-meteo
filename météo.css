@@ -32,8 +32,9 @@ header{
     height: 100%;
     color: white;
     display: inline-flex;
-   justify-content: space-evenly;
-   gap : 2% ;
+    justify-content: space-evenly;
+    gap : 2% ;
+    margin-top: 5%;
 }
 .jour{
     display: flex;
@@ -46,5 +47,6 @@ header{
     align-items: center;
 }
 #ta{
-    font-size: 1000%;
+    font-size: 700%;
+
 }

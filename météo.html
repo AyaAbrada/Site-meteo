@@ -10,7 +10,7 @@
 <header>
 
     <div class = "search p-1">
-        <input class="rounded-pill" type = "text" placeholder = "Entrer nom d'une ville " spellachek = "false">
+        <input class="search-input rounded-pill" type = "text" placeholder = "Entrer nom d'une ville " spellachek = "false">
         <button class = "btn btn-primary">Rechercher</button>
 
     <script src="script.js"></script>
@@ -18,53 +18,56 @@
 </header>
 <body class = "bg-info">
     <section class = "partie">
-    <h1>Beni Mellal</h1>
+    <h1 id = "nomVille">Nom de la ville</h1>
     <img src = "Photos\meteo 1.png" alt = meteo1 width="30%" height="30%">
     </section>
      
     <div class = "p-3">
     <h6>Température Actuelle :</h6>
-    <h1 id = "ta">18°</h1>
-    <h6>H = 22°  |  L = 15°<h6>
+    <h1 id = "ta">C°</h1>
+      <div class = "d-flex"> <h6>Humidité :</h6> <h6 id = "humidite"> %</h6> </div>
+      <div class = "d-flex"> <h6>Vent :</h6> <h6 id = "vent"> Km/h</h6> </div>
+
     </div>
 
-    <section class = "meteo">
+    <section class = "meteo p-3">
     <div class = "aujourdhui p-3">
        <h6>Aujourd'hui</h6> 
         <img src = "Photos\meteo 1.png" id= "image" alt = meteo1 width="90%" height="60%">
-        <h6>22°/15°<h6>
+        <div><h6 id = "td1"> C° </h6></div>
     </div>
 
     <div class="prochaine-jour p-3">
-        <h6> 5 prochaines jours </h6>
+        
+        <h6> Température du 5 prochaines jours à 12:00</h6>
          <div class = "jour">
             <img src = "Photos\03d@2x.png" alt = meteo2 width="90%" height="60%" >
-        <h6> 25°/17° </h6>
+        <div><h6 id = "td2"> C°</h6></div>
          </div>
 
          <div class = "jour">
             <img src = "Photos\09d@2x.png" id= "image" alt = meteo3 width="90%" height="60%">
-            <h6>  15°/9°</h6>
+            <div><h6 id = "td3"> C°</h6></div>
          </div>
 
          <div class = "jour">
             <img src = "Photos\11d@2x.png" id= "image" alt = meteo4 width="90%" height="60%">
-            <h6>13°/5°</h6> 
+            <div><h6 id = "td4"> C°</h6></div>
          </div>
 
          <div class = "jour">
             <img src = "Photos\03d@2x.png" id= "image" alt = meteo5 width="90%" height="60%">
-            <h6>  25°/15° </h6>
+            <div><h6 id = "td5"> C°</h6></div>
          </div>
 
          <div class = "jour">
             <img src = "Photos\01d@2x.png" id= "image" alt = meteo6 width="90%" height="60%">
-            <h6>27°/17° </h6>
+            <div><h6 id = "td6"> C°</h6></div>
          </div>
 
     </div>
-
 </section> 
-    
+<script src="meteo.js"></script>   
 </body>
+
 </html>
